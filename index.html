@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>TELA DE LOGIN</h1>
+    <hr>
+
+    <input type="button" value="Verificar" id="btn" onclick="verificar()">
+    <p id="p1"></p>
+
+    <script>
+        function verificar(){
+            let tentativa = 1;
+            while (tentativa <= 3){
+                let login = prompt("informe o seu Login: ")
+            let senha = prompt("informe a senha: ")
+
+            if (login == "abc" && senha == "123"){
+                alert("login esta correto")
+                window.location.href = "pagina2.html"
+            }else{
+                alert("login ou senha incorreto!")
+                tentativa++;
+            }
+
+            if (tentativa > 3){
+                document.getElementById("btn").disable = true;
+                document.getElementById("p1").innerText = "Tentativas exedidas"
+                document.body.style.background = "#ff4d4d";
+            }
+            }
+         }
+    </script>
+    
+</body>
+</html>

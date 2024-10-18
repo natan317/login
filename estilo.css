@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+} 
+body {
+    padding: 2rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: lightblue;
+}
+
+hr {
+    height: 2px;
+    width: 100%;
+    border: 0;
+    background: #000;
+}
+    
+
+h1 {
+    margin: auto;
+}
+
+#btn {
+    width: 10rem;
+    margin: auto;
+    margin-top: 2rem;
+}
